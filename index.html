@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>To Do List</title>
+    <meta content="" name="description">
+    <meta content="todo, list, do" name="keywords">
+
+    <!-- EXTERNAL LINKS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome-animation.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-8 col-sm-12 col-12 align-self-center" id="colInit">
+            <header class="headerInit">
+                <h1>To Do List</h1>
+            </header>
+        </div>
+        <div class=" col-md-5 col-sm-12 col-12 align-self-center btnInit" id="colBtn">
+            <button type="button" class="btn btn-primary btn-lg" id="taskBtn" data-toggle="modal" data-target="#taskModal" title="New Task"><span><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></span> New Task</button>
+        </div>
+
+
+        <!--MODAL-->
+
+        <div class="modal fade" id="taskModal" tabindex="-1" role="dialog" aria-labelledby="taskModalTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="taskModalTitle">Add Task</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="titleTask">Title:</label>
+                                <input type="text" class="form-control" id="titleTask">
+                            </div>
+                            <div class="form-group">
+                                <label for="descriptionTask">Description:</label>
+                                <textarea class="form-control" id="descriptionTask" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-toolbar colors" role="toolbar" aria-label="Toolbar with button groups">
+                            <button type="button" data-color="#f6b7b1" class="btn btn-secondary"></button>
+                            <button type="button" data-color="#f6dab1" class="btn btn-secondary"></button>
+                            <button type="button" data-color="#bdb1f6" class="btn btn-secondary"></button>
+                            <button type="button" data-color="#f6b1e9" class="btn btn-secondary"></button>
+                            <button type="button" data-color="#f7f7f7" class="btn btn-secondary"></button>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-dismiss="modal" id="addModal">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8 col-sm-12 col-12 align-self-center" id="insertBox">
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+<!--SCRIPTS-->
+
+<!--<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
+<script src="vendor/ie10-viewport-bug-workaround.js"></script>
+<script src="todo-compiled.js"></script>
+</body>
+</html>

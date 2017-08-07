@@ -1,0 +1,199 @@
+
+body {
+    background:
+            /*linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),*/
+            url("images/pentagons.png");
+}
+
+
+
+/*HEADER INITIAL*/
+.headerInit {
+    margin-top: 13em;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+}
+
+.headerInit h1 {
+    font-size: 4em;
+    text-align: center;
+    color: #7d74a1;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-family: 'Droid Sans Mono', monospace;
+    margin-bottom: 0.5em;
+}
+
+/*HEADER COLLAPSE*/
+.headerColap {
+    margin-top: 1em;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+}
+
+.headerColap h1 {
+    font-size: 4em;
+    text-align: center;
+    color: #7d74a1;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-family: 'Droid Sans Mono', monospace;
+    margin-bottom: 0.5em;
+}
+
+/*TASK BUTTON*/
+
+#taskBtn, .modal-footer button {
+    background-color: #7d74a1;
+}
+
+
+#taskBtn:hover, .modal-footer button:hover {
+    background-color: #bdb1f6;
+}
+
+.btnInit {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+
+
+/*MODAL BUTTONS*/
+
+#taskModal {
+    margin-top: 5em;
+}
+
+.colors button {
+    border-radius: 50%;
+    margin-right: 0.2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.colors button:focus {
+    border: 1px solid #4f4f4f;
+
+}
+
+.colors button:first-child {
+    background-color: #f6b7b1;
+}
+
+.colors button:nth-child(2) {
+    background-color: #f6dab1;
+}
+
+.colors button:nth-child(3) {
+    background-color: #bdb1f6;
+}
+
+.colors button:nth-child(4) {
+    background-color: #f6b1e9;
+}
+
+.colors button:last-child {
+    background: #f7f7f7;
+}
+
+.modal-footer {
+    display: inline;
+}
+
+.btn-toolbar {
+    display: inline;
+}
+
+#addModal {
+    float: right;
+    margin-right: 0.5em;
+}
+
+
+
+/*BOX*/
+
+.boxNote {
+    text-align: left;
+    box-shadow: -5px -4px 25px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.8em;
+}
+
+.boxNote h3, .boxNote p {
+    padding: 0.6em 0.6em 0 0.6em;
+}
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+    border:none;
+    outline:none;
+}
+
+
+/*BOX BTNS*/
+.boxNote .fa {
+    font-size: 1.5em;
+}
+
+#btnsNote {
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    float: right;
+}
+
+.fa-check-square-o {
+    color: #53c42a;
+}
+
+.fa-trash {
+    color: #c42a53;
+}
+
+.fa-trash:hover {
+    color: #6e162c;
+}
+
+.fa-arrows {
+    color: #aaa;
+    padding-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.doneCss {
+    text-decoration: line-through;
+}
+
+
+
+/*PHONES*/
+
+@media only screen and (max-width: 768px) {
+
+    .headerInit {
+        margin-top: 9em;
+    }
+
+    .headerColap h1 {
+        font-size: 2em;
+    }
+
+    .btnColap {
+        float: none;
+        font-size: medium;
+    }
+
+    #addModal {
+        float: none;
+        margin-top: 0.5em;
+
+    }
+
+    #btnsNote {
+        float: none;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+}
